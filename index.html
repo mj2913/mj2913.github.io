@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project - Feelings Button</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html lang="en">
+
+<!-- Import font and jQuery -->
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <!-- Title Animation -->
+  <h1>
+    <div class="title animation">
+      <span class="word-1">Welcome</span>
+      <span class="word-2">to</span>
+      <span class="word-3">Friendship</span>
+      <span class="word-1">Community</span>
+      <span class="word-3">Church's</span>
+      <span class="word-blink">Youth</span>
+      <span class="word-2">Media</span>
+      <span class="word-2">Center</span></div>
+  </h1>
+  <br><br><br>
+
+  <h2>How Are You Feeling Today?</h2>
+  <br>
+
+  <!-- 1st Column -->
+  <div class="col1">
+
+    <!-- Happy -->
+    <button class="happy-thumb popup" style="width: 100%" onclick="$('#happyPopup').modal();">
+        <p>happy
+          <span class="popup-thumb-span" id="happyPopup" rel:"modal:open">I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well. Psalm 139:14</>
+        </p>
+<!-- Sad -->          
+  <button class="sad-thumb popup" style="width: 100%" onclick="$('#sadPopup').modal();">
+        <p>sad
+          <span class="popup-thumb-span" id="sadPopup" rel:"modal:open">Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man is powerful and effective. James 5:16</>
+        </p>
+
+<!-- Surprised -->        
+  <button class="surprised-thumb popup" style="width: 100%" onclick="$('#surprisedPopup').modal();">
+        <p>surprised
+          <span class="popup-thumb-span" id="surprisedPopup" rel:"modal:open">Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to Him, and He will make your paths straight. Proverbs 3:5-6</span>
+        </p>
+
+<!-- Anxious --> 
+  <button class="anxious-thumb popup" style="width: 100%" onclick="$('#anxiousPopup').modal();">
+        <p>anxious
+          <span class="popup-thumb-span" id="anxiousPopup" rel:"modal:open">Do not be anxious about anything, but in everything, by prayer and petition, with thanksgiving, present your requests to God. Phillipians 4:6</span>
+        </p>
+      </div>
+          
+<!-- 2nd Column --> 
+    <div class="col2">
+  
+<!-- Fearful --> 
+    <button class="fearful-thumb popup" style="width: 100%" onclick="$('#fearfulPopup').modal();">
+        <p>fearful
+          <span class="popup-thumb-span" id="fearfulPopup" rel:"modal:open">Surely God is my salvation; I will trust and not be afraid. The LORD himself is my strength and my defense; he has become my salvation. Isaiah 12:2</span>
+        </p>
+<!-- Confident --> 
+    <button class="confident-thumb popup" style="width: 100%" onclick="$('#confidentPopup').modal();">
+        <p>confident
+          <span class="popup-thumb-span" id="confidentPopup" rel:"modal:open">I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world. John 16:33</span>
+        </p>      
+<!-- Tired --> 
+    <button class="tired-thumb popup" style="width: 100%"onclick="$('#tiredPopup').modal();">
+        <p>tired
+          <span class="popup-thumb-span" id="tiredPopup" rel:"modal:open">Come to me, all you who are weary and burdened, and I will give you rest. Matthew 11:28</span>
+        </p>      
+<!-- Joyful --> 
+    <button class="joyful-thumb popup" style="width: 100%" onclick="$('#joyfulPopup').modal();">
+        <p>joyful
+          <span class="popup-thumb-span" id="joyfulPopup" rel:"modal:open">Sing for joy, O heavens, and exult, O earth; break forth, O mountains, into singing! For the Lord has comforted his people and will have compassion on his afflicted. Isaiah 49:13</span>
+        </p> 
+    </div>
+ 
+<!-- 3rd Column -->
+      <div class="col3">
+<!-- discouraged -->        
+      <button class="discouraged-thumb popup" style="width: 100%" onclick="$('#discouragedPopup').modal();">
+        <p>discouraged
+          <span class="popup-thumb-span" id="discouragedPopup" rel:"modal:open">Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. Joshua 1:9</span>
+        </p> 
+        
+<!-- pitiful -->        
+<button class="pitiful-thumb popup" style="width: 100%" onclick="$('#pitifulPopup').modal();">
+        <p>pitiful
+          <span class="popup-thumb-span" id="pitifulPopup" rel:"modal:open">Humble yourselves, therefore, under God’s mighty hand, that He may lift you up in due time. Cast all your anxiety on Him because He cares for you. 1 Peter 5:6-7</span>
+        </p>
+
+  <!-- impatient -->   
+  <button class="impatient-thumb popup" style="width: 100%" onclick="$('#impatientPopup').modal();">
+        <p>impatient
+          <span class="popup-thumb-span" id="impatientPopup" rel:"modal:open">Jesus said, I am the way, the truth, and the life. No one comes to the Father except through Me. John 14:6</span>
+        </p>
+    
+<!-- cautious -->   
+  <button class="cautious-thumb popup" style="width: 100%" onclick="$('#cautiousPopup').modal();">
+        <p>cautious
+          <span class="popup-thumb-span" id="cautiousPopup" rel:"modal:open">'For I know the plans I have for you', declares the LORD, 'plans to prosper you and not to harm you, plans to give you hope and a future'. Jeremiah 29:11</span>
+        </p>
+    </div>
+
+<!-- 4th Column -->
+        <div class="col4">
+<!-- unloved -->   
+  <button class="unloved-thumb popup" style="width: 100%" onclick="$('#unlovedPopup').modal();">
+        <p>unloved
+          <span class="popup-thumb-span" id="unlovedPopup" rel:"modal:open">Love is patient, love is kind. It does not envy, it does not boast, it is not proud. 1 Corinthians 13:4</span>
+        </p>
+
+<!-- hopeless -->   
+  <button class="hopeless-thumb popup" style="width: 100%" onclick="$('#hopelessPopup').modal();">
+        <p>hopeless
+          <span class="popup-thumb-span" id="hopelessPopup" rel:"modal:open">Jesus said to him, 'I am the way, and the truth, and the life. No one comes to the Father except through me'. John 14:6</span>
+        </p>
+      
+<!-- confused -->   
+  <button class="confused-thumb popup" style="width: 100%" onclick="$('#confusedPopup').modal();">
+        <p>confused
+          <span class="popup-thumb-span" id="confusedPopup" rel:"modal:open">Be on your guard; stand firm in faith; be courageous; be strong. 1 Corinthians 16:13</span>
+        </p>
+    
+<!-- stressed -->   
+  <button class="stressed-thumb popup" style="width: 100%" onclick="$('#stressedPopup').modal();">
+        <p>stressed
+          <span class="popup-thumb-span" id="stressedPopup" rel:"modal:open">So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand. Isaiah 41:10</span>
+        </p>
+        <br><br><br><br>
+    </div>
+
+    <h2>Is there an emotion you're feeling that we haven't included? Add it in the form below!</h2>
+    <input class="center-block" id="suggestions" /><button onclick="addWord()" class="center-block">Add Word</button>
+    <div id="error"></div>
+    <button onclick="submit()" class="center-block">Submit</button>
+    <div id="words"></div>
+
+    <!--<p>Code inspired by MIT. All rights reserved to them</p>-->
+  
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>

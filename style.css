@@ -1,28 +1,166 @@
-/* Import monoton font */
+/*text formatting*/
 @import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
 
-/* Format webpage appearance */
+h1 {
+  text-align: center;
+  font-family: "Monoton";
+  font-weight: normal;
+  font-style: normal;
+  color: #e24c31;
+  font-size: 50px;
+}
 
+h2 {
+  text-align: center;
+  font-family: "Monoton";
+  font-weight: normal;
+  font-style: normal;
+  color: #e24c31;
+}
+
+p {
+  text-align: center;
+  font-family: "Monoton";
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*page formatting*/
+html {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
 body {
-  overflow: auto;
-  font-family: monoton;
-  background-color: white;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/*title animation word formatting*/
+.glow {
+  text-align: center;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+.word-1 {
+  animation-name: fadein;
+  animation-duration: 20s;
+}
+
+.word-2 {
+  animation-name: fadein;
+  animation-duration: 20s;
+}
+
+.word-3 {
+  animation-name: fadein;
+  animation-duration: 20s;
+}
+
+.word-4 {
+  animation-name: fadein;
+  animation-duration: 20s;
+}
+
+.word-blink {
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    color: #da71f;
+  }
+  to {
+    opacity: 1;
+    color: #c94d4d;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #b5b5b5, 0 0 20px #b5b5b5;
+  }
+  to {
+    text-shadow: 0 0 15px #b5b5b5, 0 0 25px #b5b5b5;
+  }
+}
+
+/*box and column formatting*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .col1,
 .col2,
 .col3,
-.col4,
-.col5 {
-  width: 20%;
+.col4 {
+  width: 25%;
   margin: auto;
-  float: right;
+  float: left;
   display: grid;
   padding: 0.1em;
 }
 
-/* Format menu title */
-svg {
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*popup container*/
+.popup {
+  float: left;
+  margin: 0 auto 1%;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  height: 4.5em;
+  font-weight: 300;
+  overflow: hidden;
+  padding: 0.75em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+/*actual popup*/
+.popup .popup-thumb-span {
+  display: block;
+  margin-top: 1.5em;
+  /*visibility: hidden;*/
+  text-align: center;
+  border-radius: 6px;
+}
+.popup p {
+  line-height: 1.5;
+  margin-top: 0.6em;
+  padding: 0 0.3em;
+  transition: all 0.3s ease-out;
+}
+
+/*toggle popup*/
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.button {
   display: block;
   font: 10.5em "Monoton";
   width: 960px;
@@ -30,77 +168,113 @@ svg {
   margin: 0 auto;
 }
 
-.swirl {
-  fill: none;
-  stroke: green;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 1px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+/* The Modal (actual popup) */
+.modal {
+  background-color: #242551;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: auto; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  font-size: 25px;
 }
 
-/* Animate swirl strokes */
-.swirl:nth-child(1) {
-  stroke: #4d163d;
-  animation-delay: -1;
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 10px;
+  width: auto; /* Could be more or less, depending on screen size */
+  border: none;
 }
 
-.swirl:nth-child(2) {
-  stroke: #840037;
-  animation-delay: -2s;
+/*box formatting for each emotion*/
+.happy-thumb {
+  background: linear-gradient(to right, #bd3f32, #cb356b);
+}
+.sad-thumb {
+  background: linear-gradient(to right, #ffff00, #ffa500);
+}
+.surprised-thumb {
+  background: linear-gradient(to right, #2bdfe2, #2be28a);
+}
+.anxious-thumb {
+  background: linear-gradient(to right, #2b84e2, #2e2be2);
+}
+.fearful-thumb {
+  background: linear-gradient(to right, #e22be0, #8a2be2);
+}
+.confident-thumb {
+  background: linear-gradient(to right, #bd3f32, #cb356b);
+}
+.tired-thumb {
+  background: linear-gradient(to right, #ffff00, #ffa500);
+}
+.joyful-thumb {
+  background: linear-gradient(to right, #2bdfe2, #2be28a);
+}
+.discouraged-thumb {
+  background: linear-gradient(to right, #2b84e2, #2e2be2);
+}
+.pitiful-thumb {
+  background: linear-gradient(to right, #e22be0, #8a2be2);
+}
+.impatient-thumb {
+  background: linear-gradient(to right, #bd3f32, #cb356b);
+}
+.cautious-thumb {
+  background: linear-gradient(to right, #ffff00, #ffa500);
+}
+.unloved-thumb {
+  background: linear-gradient(to right, #2bdfe2, #2be28a);
+}
+.hopeless-thumb {
+  background: linear-gradient(to right, #2b84e2, #2e2be2);
+}
+.confused-thumb {
+  background: linear-gradient(to right, #e22be0, #8a2be2);
+}
+.stressed-thumb {
+  background: linear-gradient(to right, #bd3f32, #cb356b);
 }
 
-.swirl:nth-child(3) {
-  stroke: #bd0034;
-  animation-delay: -3s;
-}
-
-.swirl:nth-child(4) {
-  stroke: #bd0034;
-  animation-delay: -4s;
-}
-
-.swirl:nth-child(5) {
-  stroke: #fdb731;
-  animation-delay: -5s;
-}
-
-/* Key frames */
-@keyframes stroke-offset {
-  100% {
-    stroke-dashoffset: -35%;
+/*animations*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-/* Format page font */
-h1 {
-  text-align: center;
-  font-family: monoton;
-  font-size: 300px;
-  color: #993f6c;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-/* Format buttons */
-div {
-  text-align: center;
-  margin: auto;
-  display: block;
-  overflow: auto;
-}
-
-/* Button colors */
-.peach-gradient {
-  background: linear-gradient(to right, #bd3f32, #cb356b);
-}
-.yellow-gradient {
-  background: linear-gradient(to right, #ffff00, #ffa500);
-}
-.aqua-gradient {
-  background: linear-gradient(to right, #2bdfe2, #2be28a);
-}
-.blue-gradient {
-  background: linear-gradient(to right, #2b84e2, #2e2be2);
-}
-.purple-gradient {
-  background: linear-gradient(to right, #e22be0, #8a2be2);
+@keyframes confetti {
+  0% {
+    opacity: 0;
+    transform: translateY(0%) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    transform: translateY(-800%) rotate(270deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(2000%) rotate(1440deg);
+  }
 }
