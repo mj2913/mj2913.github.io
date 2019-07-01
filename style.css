@@ -1,0 +1,71 @@
+/* Import monoton font */
+@import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
+
+/* Format webpage appearance */
+html,
+body {
+  height: 100%;
+  font-weight: 800;
+}
+
+/* Format word display */
+svg {
+  display: block;
+  vertical-align: middle;
+  font: 10.5em "Monoton";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  margin: 0 auto;
+  border: none;
+  background-color: #ffffff;
+  color: #ffffff;
+  background: #ffffff;
+}
+
+.swirl {
+  fill: none;
+  stroke: green;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 1px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+/* Animate swirl strokes */
+.swirl:nth-child(1) {
+  stroke: #4d163d;
+  animation-delay: -1;
+}
+
+.swirl:nth-child(2) {
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.swirl:nth-child(3) {
+  stroke: #bd0034;
+  animation-delay: -3s;
+}
+
+.swirl:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+
+.swirl:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+
+/* Key frames */
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
