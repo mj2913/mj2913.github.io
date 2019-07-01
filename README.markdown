@@ -11,11 +11,11 @@
 
 2. The second is the homepage I mentioned. It’s essentially a menu of options for what users can and should do on the device. It recycles the same text animation style from the sleep mode for design continuity. It goes further to introduce an array of buttons or options for the user to select from. Each button is styled using a linear gradient to invite some color and playfulness into the experience, and each button also directs the user to an external page (except for the news button that refers to innerHTML and the sign-in button that will likely include some data validation once users create their own unique profiles and sign-in information).
 
-<a href="homepageindex.html">Sleep Mode</a>
+<a href="homepageindex.html">Homepage</a>
 
 3. The third and final page should be much more familiar to you all. It features the emotions/mood options I introduced in earlier projects, but has had somewhat of an aesthetic makeover to brighten it up and make it more exciting and attractive for its intended youth audience.
 
-<a href="feelingsbuttonindex.html">Sleep Mode</a>
+<a href="feelingsbuttonindex.html">Feelings Button</a>
 
 ## Debugger and Console—these guys are a new-to-coding gaps best friend. These tools allowed me to recognize when my code wasn’t having the result I intended it to have, how my code was misaligned with proper code, and what I should be thinking through in order to fix it. It didn’t just give me the answers--instead it allowed me to think through them on my own.
 
