@@ -2,30 +2,32 @@
 @import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
 
 /* Format webpage appearance */
-html,
+
 body {
-  height: 100%;
-  font-weight: 800;
+  overflow: auto;
+  font-family: monoton;
+  background-color: white;
 }
 
-/* Format word display */
+.col1,
+.col2,
+.col3,
+.col4,
+.col5 {
+  width: 20%;
+  margin: auto;
+  float: right;
+  display: grid;
+  padding: 0.1em;
+}
+
+/* Format menu title */
 svg {
   display: block;
-  vertical-align: middle;
   font: 10.5em "Monoton";
   width: 960px;
   height: 300px;
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn {
-  margin: 0 auto;
-  border: none;
-  background-color: #ffffff;
-  color: #ffffff;
-  background: #ffffff;
 }
 
 .swirl {
@@ -68,4 +70,37 @@ svg {
   100% {
     stroke-dashoffset: -35%;
   }
+}
+
+/* Format page font */
+h1 {
+  text-align: center;
+  font-family: monoton;
+  font-size: 300px;
+  color: #993f6c;
+}
+
+/* Format buttons */
+div {
+  text-align: center;
+  margin: auto;
+  display: block;
+  overflow: auto;
+}
+
+/* Button colors */
+.peach-gradient {
+  background: linear-gradient(to right, #bd3f32, #cb356b);
+}
+.yellow-gradient {
+  background: linear-gradient(to right, #ffff00, #ffa500);
+}
+.aqua-gradient {
+  background: linear-gradient(to right, #2bdfe2, #2be28a);
+}
+.blue-gradient {
+  background: linear-gradient(to right, #2b84e2, #2e2be2);
+}
+.purple-gradient {
+  background: linear-gradient(to right, #e22be0, #8a2be2);
 }

@@ -1,3 +1,3 @@
-function visitHomePage() {
-  window.location = "http://www.examplehomepage.com";
+function myFunction() {
+  alert(document.getElementById("innerHTML_sign").innerHTML);
 }
