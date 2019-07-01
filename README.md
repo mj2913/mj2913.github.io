@@ -6,7 +6,8 @@
 ## So you’ll notice that I’ve been building on my initial project based on feedback from you all and from the organization I’m working with. This project, in its most recent phase consists of 3 simple webpages.
 
 1. The first is a sleep mode page that will be the default setting. This page is primarily built with HTML and CSS. I wanted it to be a simple and clean design with a crisp animation inspired by Claire Larsen. I introduced JavaScript to the page with an visitHomePage function that directs users to the homepage after the device awakens from sleep mode.
-https://gist.github.com/56c91ec884111ac0ce040fa8cfd2959a.git
+
+https://gist.github.com/mj2913/56c91ec884111ac0ce040fa8cfd2959a
 
 2. The second is the homepage I mentioned. It’s essentially a menu of options for what users can and should do on the device. It recycles the same text animation style from the sleep mode for design continuity. It goes further to introduce an array of buttons or options for the user to select from. Each button is styled using a linear gradient to invite some color and playfulness into the experience, and each button also directs the user to an external page (except for the news button that refers to innerHTML and the sign-in button that will likely include some data validation once users create their own unique profiles and sign-in information).
 
